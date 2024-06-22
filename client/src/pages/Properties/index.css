@@ -1,0 +1,25 @@
+.pc-container{
+    gap: 1rem;
+    width: clamp(12rem, 100%, 28rem);
+    flex-wrap: nowrap;
+}
+
+.pc-container .properties{
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .pc-container .properties{
+        width: 750px; 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pc-container .properties{
+        width: 300px;
+    }
+}
+

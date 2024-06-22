@@ -1,0 +1,20 @@
+.c-container{
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.c-container>img{
+    width: 9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .c-container>img{
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .c-container>img{
+        width: 7rem;
+    }
+}

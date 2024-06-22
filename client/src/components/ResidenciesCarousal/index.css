@@ -1,0 +1,29 @@
+.residencies-carousal{
+    overflow: hidden;
+    position: relative;
+}
+
+.rc-heading{
+    margin-bottom: 2rem;
+}
+
+
+.image-carousal{
+    border: none;
+    border-radius: 10px;
+    width: 270px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .image-carousal{
+        width: 200px
+    }
+
+    .r-price{
+        font-size: 1.0rem;
+    }
+
+    
+}

@@ -1,0 +1,90 @@
+.rc-card{
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin: auto;
+    transition: all 300ms ease-in-out;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    position: relative;
+}
+
+.rc-card>img{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.heart-elem{
+    position: absolute;
+    top: 145px;
+    right: 25px;
+    z-index: 1;
+}
+
+.r-price{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.rc-card>:nth-child(3){
+    font-size: 1.5rem;
+}
+
+.rc-card>:nth-child(4){
+    font-size:0.7rem ;
+    width: 18rem;
+}
+
+.rc-card:hover{
+    scale: 1.025;
+    cursor: pointer;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(136, 160, 255, 0.46) 217.91%
+    );
+    box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+}
+
+.swiper-horizontal{
+    overflow: visible;
+}
+
+.rc-buttons{
+    gap: 1rem;
+    top: -4rem;
+    right: 0;
+    margin-top: 1rem;
+}
+
+.rc-buttons button{
+    font-size: 1.2rem;
+    padding: .4rem .8rem;
+    color: orange;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .rc-card{
+        width: 220px;
+    }
+
+    .rc-card>:nth-child(3){
+        font-size: 1.2rem;
+    }
+
+    .rc-card>:nth-child(4){
+        font-size:0.7rem ;
+        width: 100%;
+    }
+}
